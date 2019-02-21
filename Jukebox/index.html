@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Jukebox</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+        
+	</head>
+
+	<body>
+		<div class= "container">
+			<div class= "vinyl-player">
+				<img src="img/vinyl-player.png" width="860px"/>
+			</div>
+		<div class= "audio-player">
+			<div class="player">
+				<div id="songTitle" class="song-title">Song title</div>
+				<input id="songSlider" class="song-slider" type="range" min="0" step="1" onchange="Jukebox.seekSong()" />
+                    <div>
+                        <div id="currentTime" class="current-time">00:00</div>
+                        <div id="duration" class="duration">00:00</div>
+                    </div>
+
+                    <div class="controllers">
+                        <img src="img/previous.png" width="35px" onclick="Jukebox.preSong();" />
+                        <img src="img/play.png" width="55px" onclick="Jukebox.playOrPause(this);" />
+                        <img src="img/next.png" width="35px" onclick="Jukebox.nextSong();" />
+                        <!-- <img src="img/repeat.png" width="35px" onclick="Jukebox.loopSongs()"/> -->
+                        <img src="img/shuffle.png" width="35px" onclick = "Jukebox.shuffleSongs()" />
+                        <div class="volume">
+                            <img src="img/volume-down.png" width="21px" />
+                            <input id="volumeSlider" class="volume-slider" type="range" min="0" max="1" step="0.01" 
+    onchange="Jukebox.adjustVolume()" />
+                            <img src="img/volume-up.png" width="21px" style="margin-left:2px;" />
+                        </div>
+                    </div>
+                    <div class="playlist-box">
+                        <div class="playlist-songs">
+                            <ol>
+                                <li id="" class="title" onclick="Jukebox.playSong(0)">thank u, next</li>
+                                <li id="" class="title" onclick="Jukebox.playSong(1)">Pray For Me</li>
+                                <li id="" class="title" onclick="Jukebox.playSong(2)">New Rules</li>
+                                <li id="" class="title" onclick="Jukebox.playSong(3)">Happier</li>
+                                <li id="" class="title" onclick="Jukebox.playSong(4)" >Pray For Me</li>
+                                <li id="" class="title" onclick="Jukebox.playSong(5)">7 rings</li>
+                                <li id="" class="title" onclick="Jukebox.playSong(6)">no tears left to cry</li>
+                                <li id="" class="title" onclick="Jukebox.playSong(7)">Sunflower</li>
+                                <li id="" class="title" onclick="Jukebox.playSong(8)">Nice For What</li>
+                                <li id="" class="title" onclick="Jukebox.playSong(9)">Call Out My Name</li h
+                            </ol>
+                        </div>
+                    </div>
+                    <div id="nextSongTitle" class="song-title"><b>Next Song:</b> Next song title</div>
+			</div>
+		</div>
+		</div>
+        <script type="text/javascript" src="player.js"></script>
+	</body>
+</html>

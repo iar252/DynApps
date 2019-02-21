@@ -1,0 +1,116 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    background: rgb(238,238,238);
+}
+
+.container{
+    border:black solid 2px;
+    width: 1600px;
+    height: 920px;
+    overflow: scroll;
+}
+
+.vinyl-player{
+    position: absolute;
+    top: 120px;
+    left: 0;
+}
+
+.audio-player{
+	width: 700px;
+	height: 740px;
+    border-radius: 20px;
+	background: rgb(50,50,50);
+    border: rgb(185,185,185) solid 2px;
+	color: white;
+	font-family: verdana;
+	font-size: 18px;
+	top: 100px;
+	left: 850px;
+	position: absolute;
+}
+
+.player{
+	float: left;
+	margin-left: 35px;
+    margin-top: 23px;
+}
+
+.song-title{
+	width: 630px;
+	padding: 10px 0px 15px 0px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.song-slider{
+	width: 630px;
+}
+
+.current-time{
+	float: left;
+	font-size: 12px;
+}
+
+.duration{
+	float: right;
+	font-size: 12px;
+    margin-right: 15px;
+}
+
+.controllers{
+    width: 650px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+	clear: both;
+	display: table;
+}
+
+.controllers *{
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
+.volume{
+    margin-top: 14px;
+    float: right;
+}
+
+.volume-slider{
+	width: 100px;
+}
+
+.playlist-box{
+    position: absolute;
+    top: 250px;
+    left: 0;
+    width: 700px;
+    height: 488px;
+    border-top: rgb(185,185,185) solid 2px;
+    border-radius: 0 0 20px 20px;
+	background: rgb(30,30,30);
+}
+
+.playlist-songs{
+    width: 700px;
+    height: 470px;
+    margin: 15px;
+    overflow: scroll;
+}
+
+.title:hover{
+    color: yellow;
+    font-size: 22px;
+}
+
+.title{
+    width: 600px;
+    height: auto;
+    padding: 10px;
+    margin: 2px;
+    background: black;
+    height: auto;
+    color: rgba(250,250,250,0.6);
+}
