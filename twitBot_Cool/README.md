@@ -1,0 +1,1 @@
+I used this assignment to tweet a garden (one plant and one type of animal) on an interval of 2 seconds. I used emojis to represent the plants and animals. This helped me better understand the code that we focused on in class on the 26th. I included comments on the thought process of the code (at the bottom of the app.js file).
