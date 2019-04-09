@@ -1,0 +1,86 @@
+/*
+  Styles from this codepen:
+  https://codepen.io/official_naveen/pen/rgknI
+*/
+
+body {
+  width: 800px;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fcfcc4;
+}
+.container {
+  width: 100%
+  margin: 0 auto;
+  background-color: white;
+
+}
+form {
+  display: block;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-before: 0em;
+  -webkit-padding-start: 0em;
+  -webkit-padding-end: 0em;
+  -webkit-padding-after: 0em;
+  border: 0px;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  min-width: -webkit-min-content;
+  padding: 30px;
+}
+.ghost-input, p {
+  display: inline-block;
+  font-weight:300;
+  width: 100%;
+  font-size: 20px;
+  border:0px;
+  outline: none;
+  width: 70%;
+  color: green;
+  background: #fff;
+  font-family: Open Sans,Verdana;
+  margin: 30px 0px;
+}
+.ghost-input:focus {
+  border-bottom:3px solid black;
+}
+.ghost-button {
+  display: inline-block;
+  background-color: transparent;
+  border:2px solid #ddd;
+  padding:10px 30px;
+  width: 25%;
+  min-width: 50px;
+}
+.ghost-button:hover {
+  border:2px solid #515151;
+  background-color: #fcfcc4
+}
+
+.content{
+  margin-left: 30px;
+}
+
+
+p {
+  color: green;
+}
+a{
+  text-decoration: none;
+}
+h2{
+  text-align: center;
+  text-decoration: underline;
+  color: green;
+}
+.center{
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
