@@ -1,0 +1,21 @@
+{
+  "name": "expressapplogin",
+  "version": "1.0.0",
+  "description": "## About On the website, you should be able to search for recipes. Once you've entered the name of something you're looking for, for example \"cake\", the page will display the number of recipes there are, and randomly choose one for you to try. It will provide a picture of the recipe, along with credit for the publisher, and a link to the recipe.",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "handlebars": "^4.1.1",
+    "hbs": "^4.0.3",
+    "install": "^0.12.2",
+    "npm": "^6.9.0",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
