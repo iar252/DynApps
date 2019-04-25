@@ -1,0 +1,1 @@
+Couldn't get the chat to upload a file. I tried two different packages but they don't seem to work. I used socket.io-file and socketio-file-upload. 

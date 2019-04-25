@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Socket.IO Chat</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+	<!-- <script src='../app.js'></script> -->
+	<script>
+	  $(function () {
+	    var socket = io();
+	    $('form').submit(function(e){
+	      e.preventDefault(); 
+	      socket.emit('chat message', $('#m').val());
+	      $('#m').val('');
+	      return false;
+	    });
+	    socket.on('chat message', function(msg){
+	    	$('#messages').append($('<li>').text(msg));
+	    })
+
+	    $('#send_username').click(function() {
+            socket.emit('given_username', {
+                username: $('#username').val()
+            });
+
+        });
+
+ 
+	  });
+	</script>
+	<script>
+		function hide(){
+		var x = document.getElementById("given_username");
+	  	if (x.style.display === "none") {
+	    	x.style.display = "block";
+	 	} else {
+	    	x.style.display = "none";
+	  	}
+		}
+	</script>
+		
+	<script type="module">
+		//var SocketIOFileUpload = require('socketio-file-upload');
+		
+		var socket = io.connect();
+		var sockfileupload = new sockio(socket);
+		sockfileupload.listenOnSubmit(document.getElementById("upload_button"),document.getElementById("sockio_input"));
+		// socket.on('sockio_input', function(msg){
+  //   	$('#messages').append($('<li>').text(msg));
+  //   })
+		//uploader.listenOnInput(document.getElementById("sockio_input"));
+	</script>
+</head>
+<body>
+	
+    <section>
+        <form id="given_username">
+            <input id="username" type="text" placeholder="Enter a Username" />
+            <button onclick="hide()" id="send_username" type="button">Name</button>
+        </form>
+    </section>
+
+
+	<ul id="messages"></ul>
+	<label>Upload File: <input type='file' id='sockio_input'/></label>
+	<button id="upload_button">Upload File</button>
+	
+	<form>
+		<input id="m" autocomplete="off" placeholder="Enter Your Message Here..." /> <button>Send</button>
+	</form>
+</body>
+</html>
