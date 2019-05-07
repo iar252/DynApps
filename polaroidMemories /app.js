@@ -52,7 +52,7 @@ app.post('/submitPic',multipartMiddleware, (req,res)=>{
 	const oldFilePath = req.files.myFile.path.split("/");
 	console.log(oldFilePath);
 	
-	if(count != 3){
+	if(count != 4){
 		count += 1
 		oldFilePath[1] = 'file' + count + '.png';
 		const newFilePath = oldFilePath.join("/")
