@@ -1,0 +1,152 @@
+*{
+	background-color: #eff9fc;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 20px;
+}
+
+body{
+	background-color: #eff9fc;
+}
+
+figcaption h3{
+	background-color: white;
+	font-size: 24px
+	
+}
+
+img.camera{
+	width: 15%;
+	height: 15%;
+}
+.grid_2{
+	display: block;
+	margin-left: 200px;
+}
+
+.heading{
+	background-color: #479ec6;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	color: white;
+	font-weight: bold;
+
+}
+.welcome{
+	font-size: 25px;
+}
+
+.center{
+	text-align: center;
+}
+
+.startButton{
+	padding: 7% 5% 9%;
+	background-color: black;
+	color: white;
+}
+
+input.startButton:hover{
+	background-color: white;
+	padding: 6% 4%;
+	color: black;
+	border-color: black;
+	border-width: 20px 20px 55px;
+}
+.grad1 {
+    background: red;
+    background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);
+    background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+hr{
+	border: 90px;
+}
+
+.form{
+	border: 3px solid black;
+	width: 50%;
+	margin-left: 25%;
+	
+}
+
+#inputGroupFile1{
+	display: block;
+	margin: 25px;
+	padding: 0px;
+}
+
+.header {
+    text-align: center;
+}
+
+.header h1 {
+    font-family: serif;
+    font-size: 38px;
+    font-family: 'Times New Roman';
+}
+
+.content {
+    margin: 100px;
+}
+
+.photoPrompt{
+	background-color: black;
+	color: white;
+	padding: 20px;
+	text-align: center;
+}
+
+.develop, .addPhoto{
+	background-color: black;
+	color: white;
+	padding: 5px 20px;
+	display: block;
+	margin-left: 45%;
+	margin-top: 5%;
+
+}
+
+.addPhoto:hover, .develop:hover{
+	background-color: #479ec6;
+	color: black;
+}
+label{
+	padding:10px;
+	background-color: black;
+	color: white;
+	display: block;
+}
+
+.polaroid{
+	width: 300px;
+	margin-left: 70px;
+	margin-top: 50px;
+	height: 450px;
+	background-color: white;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 95px;
+	padding-top: 10px;  
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+img.image{
+	width: auto;
+	height: 320px;
+	text-align: center;
+
+}
+figcaption {
+
+	text-align: center;
+	margin-top: 25px;
+	padding-bottom: 25px;
+	background-color: white;
+}
+
+
+
